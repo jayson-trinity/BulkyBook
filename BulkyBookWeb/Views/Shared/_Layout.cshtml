@@ -26,10 +26,13 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Category" asp-action="Index">Category</a>
                         </li>
-                        <li class="nav-item">
+                        @*wont be using this registration*@
+                        @*<li class="nav-item">
                             <a class="nav-link"  asp-controller="Account" asp-action="Register">Register</a>
-                        </li>
+                        </li>*@
                     </ul>
+                    
+                    <partial name="_LoginPartial.cshtml" />
                     <form class="d-flex">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
